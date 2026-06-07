@@ -1,0 +1,34 @@
+# data
+pandas
+numpy
+
+# visualisation
+matplotlib
+seaborn
+
+# machine learning
+scikit-learn
+xgboost
+lightgbm
+optuna
+
+# experiment tracking
+mlflow
+
+# data versioning
+dvc
+dvc-s3
+
+# api
+fastapi
+uvicorn
+
+# monitoring
+evidently
+
+# testing
+pytest
+
+# utils
+python-dotenv
+pyyaml
