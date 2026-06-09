@@ -1,0 +1,15 @@
+models:
+  logistic_regression:
+    C: 1.0              # regularisation strength — lower = more regularisation
+    solver: lbfgs       # optimisation algorithm, good default for small datasets
+
+  random_forest:
+    n_estimators: 100   # number of trees in the forest
+    max_depth: 6        # how deep each tree can grow — prevents overfitting
+    min_samples_leaf: 2 # minimum samples required at a leaf node
+
+  xgboost:
+    n_estimators: 100   # number of boosting rounds
+    max_depth: 4        # shallower than RF because boosting builds on errors
+    learning_rate: 0.1  # how much each tree corrects the previous one
+    subsample: 0.8      # fraction of training rows used per tree

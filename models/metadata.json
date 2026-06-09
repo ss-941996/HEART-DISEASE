@@ -1,0 +1,30 @@
+{
+  "champion_model": "logistic_regression",
+  "test_f1": 0.8488,
+  "test_roc_auc": 0.9034,
+  "test_accuracy": 0.8315,
+  "test_recall": 0.8529,
+  "trained_on_rows": 736,
+  "feature_columns": [
+    "age",
+    "sex",
+    "trestbps",
+    "chol",
+    "fbs",
+    "thalch",
+    "exang",
+    "oldpeak",
+    "trestbps_missing",
+    "chol_missing",
+    "thalch_missing",
+    "oldpeak_missing",
+    "cp_asymptomatic",
+    "cp_atypical_angina",
+    "cp_non_anginal",
+    "cp_typical_angina",
+    "restecg_Unknown",
+    "restecg_lv_hypertrophy",
+    "restecg_normal",
+    "restecg_st_t_abnormality"
+  ]
+}
