@@ -5,3 +5,4 @@ mlflow.db
 __pycache__/
 *.pkl
 .venv/
+/data

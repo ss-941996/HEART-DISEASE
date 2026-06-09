@@ -1,0 +1,5 @@
+outs:
+- md5: 4dee4e799585dc73dacbb061d6b3ad09
+  size: 1258
+  hash: md5
+  path: champion.pkl
