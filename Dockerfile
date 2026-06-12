@@ -48,4 +48,4 @@ EXPOSE 8000
 # --host 0.0.0.0 means accept connections from any IP, not just localhost.
 #   Without this, the API would only be reachable from inside the container.
 # --port 8000 matches the EXPOSE above.
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "src.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
