@@ -25,13 +25,13 @@ RUN pip install --no-cache-dir -r requirements-inference.txt
 # Copy source code and the files the API needs at runtime.
 # We copy only what's needed — not data/, not .venv/, not mlruns/.
 # .dockerignore handles exclusions (like .gitignore but for Docker).
-COPY src/api/main.py .
-COPY models/champion.pkl     models/champion.pkl
-COPY models/preprocessor.pkl models/preprocessor.pkl
-COPY models/metadata.json    models/metadata.json
+# Copy entire repo including .dvc and dvcstore
+COPY . .
 
-COPY dvcstore dvcstore
+# Install DVC
 RUN pip install dvc
+
+# Restore model files from local DVC remote
 RUN dvc pull -r myremote
 
 
