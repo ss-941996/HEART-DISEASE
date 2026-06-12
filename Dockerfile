@@ -30,6 +30,11 @@ COPY models/champion.pkl     models/champion.pkl
 COPY models/preprocessor.pkl models/preprocessor.pkl
 COPY models/metadata.json    models/metadata.json
 
+COPY dvcstore dvcstore
+RUN pip install dvc
+RUN dvc pull -r myremote
+
+
 # ── EXPOSE PORT ───────────────────────────────────────────────────────────────
 # Tells Docker that this container listens on port 8000.
 # This is documentation — it doesn't actually open the port.
