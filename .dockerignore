@@ -1,12 +1,12 @@
 .venv/
 .git/
-.dvc/
+
 data/
 mlruns/
 mlflow.db
 reports/
 tests/
-*.dvc
+
 .env
 __pycache__/
 *.pyc
